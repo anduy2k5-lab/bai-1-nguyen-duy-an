@@ -1,0 +1,153 @@
+/* EXTERNAL CSS - giao diện chung */
+* {
+    box-sizing: border-box;
+}
+
+body { /* Element selector */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Font chung */
+    font-size: 16px;
+    background-color: rgb(245, 247, 252); /* Màu dạng RGB */
+    color: #26344b; /* Màu dạng HEX */
+    line-height: 1.65;
+}
+
+.page-wrapper {
+    width: 92%;
+    max-width: 780px;
+    margin: 32px auto;
+}
+
+.page-header {
+    background-image: linear-gradient(120deg, #244c80, #668ec2);
+    border-radius: 18px;
+    padding: 25px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(32, 60, 105, 0.16); /* RGBA */
+    text-align: center;
+}
+
+.eyebrow {
+    color: white; /* Màu dạng tên */
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-caption {
+    color: #f4f7ff;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Group selector: định dạng chung các tiêu đề */
+h1, h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.35;
+}
+
+/* Class selector + Box Model */
+.profile, .hobby-card {
+    width: 100%;
+    padding: 26px;
+    margin: 0 0 22px;
+    border: 1px solid #d8e1ee;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(32, 60, 105, 0.10);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+/* ID selector: ảnh đại diện hình tròn */
+#avatar {
+    width: 158px;
+    height: 158px;
+    border: 5px solid #dce8f5;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 25%; /* Chọn vị trí hiển thị trong khung tròn, không thay đổi file ảnh gốc */
+    flex-shrink: 0;
+}
+
+.profile-content {
+    min-width: 0;
+}
+
+/* Descendant selector: đoạn văn bên trong .profile */
+.profile p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.profile .small-label {
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #74849b;
+}
+
+.student-name {
+    margin: 3px 0 14px;
+    font-size: 25px;
+}
+
+.profile .note {
+    color: #64748b;
+    font-style: italic;
+}
+
+.hobby-card h2 {
+    color: #244c80;
+    font-size: 21px;
+    margin: 0;
+}
+
+.hobby-card > p {
+    margin: 8px 0;
+}
+
+/* Element selector */
+p {
+    line-height: 1.7;
+}
+
+a {
+    color: #2563a6;
+    text-decoration: none; /* Bỏ gạch chân */
+    font-weight: 600;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #66758d;
+    padding: 8px 15px 22px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 2px 0 7px;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+}

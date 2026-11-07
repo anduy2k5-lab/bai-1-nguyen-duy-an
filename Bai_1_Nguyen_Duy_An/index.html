@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Thông tin cá nhân | Nguyễn Duy An</title>
+
+    <!-- EXTERNAL CSS: định dạng giao diện chung -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS: định dạng tiêu đề và danh sách sở thích -->
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        .hobby-list {
+            list-style-type: square;
+            padding-left: 22px;
+            margin-top: 12px;
+        }
+
+        .hobby-list li {
+            padding: 12px 14px;
+            margin-bottom: 10px;
+            border-radius: 9px;
+            line-height: 1.6;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .hobby-list li:hover {
+            background-color: #dcecff;
+            color: #154478;
+        }
+    </style>
+</head>
+<body>
+    <main class="page-wrapper">
+        <header class="page-header">
+            <p class="eyebrow">BÀI THỰC HÀNH CSS SỐ 1</p>
+            <h1>THÔNG TIN CÁ NHÂN</h1>
+            <p class="header-caption">Giới thiệu bản thân và những sở thích của tôi</p>
+        </header>
+
+        <section class="profile" aria-label="Hồ sơ cá nhân">
+            <img id="avatar" src="avatar.png" alt="Ảnh đại diện Nguyễn Duy An">
+
+            <div class="profile-content">
+                <p class="small-label">HỌ VÀ TÊN</p>
+                <!-- INLINE CSS: thay đổi màu sắc của họ tên -->
+                <h2 class="student-name" style="color: #c44a77;">Nguyễn Duy An</h2>
+                <p><strong>Ngành học:</strong> Thương mại điện tử</p>
+                <p><strong>Giới thiệu:</strong> Tôi là sinh viên ngành Thương mại điện tử. Đây là trang giới thiệu thông tin cá nhân và sở thích của tôi.</p>
+                <p><strong>Email:</strong> <a href="mailto:251060107337@st.phenikaa-uni.edu.vn">251060107337@st.phenikaa-uni.edu.vn</a></p>
+                <p class="note"><em>Sở thích nổi bật của tôi là đá bóng.</em></p>
+            </div>
+        </section>
+
+        <section class="hobby-card" aria-labelledby="hobby-title">
+            <h2 id="hobby-title">DANH SÁCH SỞ THÍCH</h2>
+            <p>Hoạt động thể thao tôi yêu thích:</p>
+            <ul class="hobby-list">
+                <li>⚽ Đá bóng</li>
+                <li>🥅 Rèn luyện kỹ năng chơi bóng</li>
+                <li>🏃 Rèn luyện thể lực để chơi bóng tốt hơn</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Thiết kế bằng HTML và CSS — Bài 1</p>
+            <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">Tìm hiểu thêm về CSS</a>
+        </footer>
+    </main>
+</body>
+</html>
